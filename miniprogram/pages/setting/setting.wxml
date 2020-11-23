@@ -1,0 +1,25 @@
+<!--miniprogram/pages/setting/setting.wxml-->
+<view class="ns"> 
+  <image bindtap="bindBack" style="margin-left:5%; margin-top:10%;" class="arr" src="background-image: ../../back.png" mode="cover"></image>
+</view>
+  <view class="user-info">
+      <view class="edittext">
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </view>
+      <image class="userinfo-avatar" style="background-image: url({{avatarUrl}})"></image>
+    </view>
+
+
+  <button class="navi" bindtap="bindDetail">
+      关于我们
+      <image bindtap="bindOrderTap" class="arr" src="background-image: ../../return.png" mode="cover"></image>
+    </button>
+
+  <button class="navi" bindtap="bindComing" >
+      即将上线
+      <image bindtap="bindOrderTap" class="arr" src="background-image: ../../return.png" mode="cover"></image>
+    </button>
+
+  <view class="navi" hover-class="weui-cell_active" style="justify-content: center;">
+    <text>version:v1.1.7</text>
+  </view>

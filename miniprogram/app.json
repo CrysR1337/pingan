@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/index/index",
+    "pages/user/user",
+    "pages/home/home",
+    "pages/setting/setting"
+  ],
+  "window": {
+    "backgroundColor": "#000",
+    "backgroundTextStyle": "light",
+    "navigationStyle": "custom",
+    "navigationBarBackgroundColor": "#cfecf2"
+  },
+  "tabBar": {
+    "custom": true,
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "冥想",
+        "iconPath": "images/think.png",
+        "selectedIconPath": "images/think.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "空间",
+        "iconPath": "images/space.png",
+        "selectedIconPath": "images/space.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

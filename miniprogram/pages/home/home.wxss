@@ -1,0 +1,129 @@
+/* miniprogram/pages/home/home.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position:fixed;
+  height: 100%;
+  width: 100%;
+  background-color:#efefef;
+  border-top:1px solid #CCC;
+  bottom:0rpx;
+  box-shadow: 0px -15px 20px rgba(87, 87, 87, 0.33);
+  opacity: 0.9;
+  z-index: 1;
+
+}
+.backg{
+  position: absolute; 
+  display: flex; 
+  height:100%; 
+  width:100%; 
+  top: 0;
+  z-index: 0;
+}
+.logo {
+  width: 30%;
+  height: 8%;
+  margin-top: 25%;
+  z-index: 5;
+}
+.text {
+  font-size: 30px;
+  font-family: PingFang SC;
+  font-weight: 300;
+  line-height: 34px;
+  color: #FFFFFF;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.33);
+  letter-spacing: 10px;
+  opacity: 0.83;
+}
+
+.butt {
+  position: fixed;
+  left: 25%;
+  bottom: 5%;
+  width: 50%;
+  height: 55rpx;
+  opacity: 1;
+  color: #B2C2CB;
+  border-radius: 100px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border: solid 5rpx #B2C2CB;
+  margin-top: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.music-map {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.china {
+  width:100%;
+  height: 100%;
+  position: relative;
+}
+.map {
+  width: 100%;
+  height: 100%;
+}
+.item {
+  width: 100%;
+  height: 50%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 4;
+}
+.item-row {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.img {
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  height: 80%;
+}
+
+.sha {
+  width: 100%;
+  height: 50%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 3;
+}
+.shadow-row {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.shadow {
+  transform: translateX(800rpx);
+  width: 25%;
+}
+.shadow.show {
+  transform: translateY(0rpx);
+}
+.up{
+  width: 5%;
+  height: 5%;
+  margin-top: -25%;
+  z-index: 5;
+}

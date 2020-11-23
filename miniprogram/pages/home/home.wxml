@@ -1,0 +1,45 @@
+<!--miniprogram/pages/home/home.wxml-->
+<view class="container">
+  <image class="backg" mode="aspectFill" src="cloud://database-37af44.6461-database-37af44-1258823439/welcome/welcome-backg.png"></image>
+  <image class="logo" mode="aspectFit" src="cloud://database-37af44.6461-database-37af44-1258823439/welcome/logo.png"/>
+	<text class="text" style="justify-content: center; align-items: center;" > 平安AI冥想音乐 </text>
+
+  <view class="music-map">
+    <view class="china">
+      <image class="map" src="{{mapsrc}}" mode="aspectFit"></image>
+    </view>
+    <view class="item">
+      <view class="item-row" style="margin-top:10%;">
+        <image class="img" mode="aspectFit" style="margin-left: 5%;" bindtap="select1" src="{{itemsrc[0]}}"></image>
+        <image class="img" mode="aspectFit" style="padding-left: 7%; margin-top: 15%;" bindtap="select2" src="{{itemsrc[1]}}"></image>
+        <image class="img" mode="aspectFit" style="margin-left: 5%; margin-top:-20%;" bindtap="select3" src="{{itemsrc[2]}}"></image>
+      </view>
+      <view class="item-row">
+        <image class="img" mode="aspectFit" style="margin-top:-30%;" bindtap="select4" src="{{itemsrc[3]}}"></image>
+        <image class="img" mode="aspectFit" style="margin-top:-5%; margin-left:5%;" bindtap="select5" src="{{itemsrc[4]}}"></image>
+        <image class="img" mode="aspectFit" style="margin-top:-5%;" bindtap="select6" src="{{itemsrc[5]}}"></image>
+      </view>
+    </view>
+    <view class="sha">
+      <view class="shadow-row" style="margin-top:10%;">
+        <image class="shadow {{show1?'show':''}}" mode="aspectFit" style="padding-left: 4%;" src="{{shadow[0]}}"></image>
+        <image class="shadow {{show2?'show':''}}" mode="aspectFit" style="margin-left: -3%; padding-left:0%; margin-top: 15%;" src="{{shadow[1]}}"></image>
+        <image class="shadow {{show3?'show':''}}" mode="aspectFit" style="margin-left: -5%; margin-top:-20%;" src="{{shadow[2]}}"></image>
+      </view>
+      <view class="shadow-row">
+        <image class="shadow {{show4?'show':''}}" mode="aspectFit" style="margin-top:-30%;" src="{{shadow[3]}}"></image>
+        <image class="shadow {{show5?'show':''}}" mode="aspectFit" style="margin-top:-5%; margin-left:-5%;" src="{{shadow[4]}}"></image>
+        <image class="shadow {{show6?'show':''}}" mode="aspectFit" style="margin-top:-5%; margin-left:-10%;" src="{{shadow[5]}}"></image>
+      </view>
+    </view>
+  </view>
+  <image class="up" mode="cover" src="../../images/uping.gif"/>
+	<text style="margin-top:5%; color:white; font-size:16px; justify-content: center; align-items: center; z-index:5;" > 点击选择风情 </text>
+  <text style="margin-top:5%; color:#96EEF2; font-size:23px; justify-content: center; align-items: center; z-index:5;" > {{itemname}} </text>
+  <view wx:if="{{flag}}">
+    <button bindtap="bindEnterTap" class="butt" style="color:white; border: solid 5rpx white;">开启冥想之旅</button>
+  </view>
+  <view wx:else>
+    <button class="butt">开启冥想之旅</button>
+  </view>
+</view>

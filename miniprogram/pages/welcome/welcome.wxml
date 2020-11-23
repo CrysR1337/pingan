@@ -1,0 +1,34 @@
+<!--miniprogram/pages/welcome/welcome.wxml-->
+	<view class='location'>
+		<swiper class="back"
+			indicator-dots="{{true}}"
+			indicator-color="#F3F3F3" indicator-active-color="#FA6400"
+			easing-function="easeInOutCubic"
+			autoplay="{{false}}" 
+			interval="{{3000}}" 
+			duration="{{500}}"
+			circular="{{false}}"
+			style="height:100%;">
+			<block wx:for="{{imgUrls}}" wx:key="key">
+				<swiper-item>
+					<view class="back">
+						<view class="uper">
+
+						</view>
+						<view class="lower">
+							<image class="img" mode="heightfix" src="{{item}}"/>
+              <view class="container">
+                <text style="font-size: 60rpx; margin-left:5%; height:30%; justify-content: center; align-items: center; color: #121212;" > 平安AI冥想音乐 </text>
+                <view style="display: flex; flex-direction: column; width:auto;">
+                  <text style="font-size: 24rpx; height:50%; color: #959393;" > 多维度自动拓展音乐生成算法 </text>
+                  <text style="font-size: 24rpx; height:50%; text-align: center; color: #959393;" > 智能生成特色民间曲调 </text>
+                </view>
+                
+              </view>
+						</view>
+					</view>
+				</swiper-item>
+			</block>
+		</swiper>
+	</view>
+  <button bindtap="bindNextTap" class="butt">跳过 》</button>

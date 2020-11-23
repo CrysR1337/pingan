@@ -1,0 +1,27 @@
+<!--miniprogram/pages/user/user.wxml-->
+
+	<view class='location'>
+    <view class="back">
+						<view class="uper">
+							<text style="margin-top: 15%; height: 10%;" > 冥想空间 </text>
+              <view class="user-info">
+                <button 
+                  open-type="getUserInfo" 
+                  bindgetuserinfo="onGetUserInfo"
+                  class="userinfo-avatar"
+                  style="background-image: url({{avatarUrl}})"
+                  size="mini"
+                  type="person" 
+                ></button>
+                <view class="id">
+                  <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+                  <text class="user-title" style="font-size: 22rpx; color: white;">Good at studying and keep moving</text>
+                </view>
+                <image bindtap="bindSetting" class="arr" mode="aspectFill" style="height: 50rpx; width: 50rpx;" src="../../images/setting.png"/>
+              </view>
+						</view>
+						<view class="lower">
+							<image class="img" mode="aspectFill" src="cloud://database-37af44.6461-database-37af44-1258823439/me/me-2.png"/>
+						</view>
+					</view>
+	</view>

@@ -1,0 +1,122 @@
+/* miniprogram/pages/setting/setting.wxss */
+page{
+  width: 100%;
+  height: auto;
+  background: linear-gradient(to top right, #88D1D2, #cc55D2);
+}
+.user-info{
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 300ms ease;
+  margin-top: 20%;
+}
+.edittext{
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: auto;
+}
+.text123[type="primary"] {
+  font-size: 25rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50rpx;
+  background: no-repeat;
+  border: none;
+  width: auto;
+  color: black;
+}
+.userinfo-avatar {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 100%;
+  background-size: cover;
+  background-color: #7fc9d9;
+  margin: 0;
+  padding: 0;
+}
+.mainMenu {
+  width: 90%;
+  height: 100%;
+	background: #ffffff;
+	box-shadow: 0rpx 6rpx 12rpx 0rpx 
+		rgba(0, 0, 0, 0.16);
+  border-radius: 28rpx;
+  margin-left: 5%;
+  background-color: #ffffff;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.navi{
+  height: 150rpx;
+  width: 100% !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.arr{
+  border-radius: 100%;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  width: 50rpx;
+  height: 50rpx;
+}
+.line-9 {
+	width: 90%;
+	height: 0rpx;
+	border: solid 1rpx #3d3d3d;
+  opacity: 0.5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+/* 聊天下单 */
+.white{
+  height: 150rpx;
+  width: 100%;
+  /* 纯站位用，可更改 */
+}
+.function{
+  height: 11%;
+  width: 100%;
+  background-color: #e5e5e5;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+}
+.talk{
+  height: 100rpx;
+  width: 220rpx;
+  border: 1px solid #2fa5be;
+  border-radius: 74rpx;
+  line-height: 73rpx;
+  text-align: center;
+  color: #2fa5be;
+  font-size: 40rpx;
+  background-color: #fff;
+  margin: 36rpx 28rpx auto 48rpx;
+}
+.order{
+  height: 100rpx;
+  width: 220rpx;
+  border: 1px solid #2fa5be;
+  border-radius: 74rpx;
+  line-height: 73rpx; 
+  text-align: center;
+  color: #fff;
+  font-size: 40rpx;
+  background-color: #2fa5be;
+  margin-top: 36rpx;
+}
